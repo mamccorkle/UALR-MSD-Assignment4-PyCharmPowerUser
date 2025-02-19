@@ -1,47 +1,47 @@
-def print_grid(b):
-    for r in b:
-        print(" | ".join(r))
+def print_grid(board):
+    for row in board:
+        print(" | ".join(row))
         print("-" * 5)
 
 
-def c_w(b, p):
+def check_winner(board, players):
     for i in range(3):
-        if all(b[i][j] == p for j in range(3)) or all(b[j][i] == p for j in range(3)):
+        if all(board[i][j] == players for j in range(3)) or all(board[j][i] == players for j in range(3)):
             return True
-    if all(b[i][i] == p for i in range(3)) or all(b[i][2 - i] == p for i in range(3)):
+    if all(board[i][i] == players for i in range(3)) or all(board[i][2 - i] == players for i in range(3)):
         return True
     return False
 
 
-def f(b):
-    return all(c != " " for r in b for c in r)
+def tie(board):
+    return all(col != " " for row in board for col in row)
 
 
-def t():
-    b = [[" " for _ in range(3)] for _ in range(3)]
-    p = ["X", "O"]
+def tictactoe():
+    board = [[" " for _ in range(3)] for _ in range(3)]
+    players = ["X", "O"]
     print("Tic-Tac-Toe Game")
-    print_grid(b)
-    for t in range(9):
-        pl = p[t % 2]
+    print_grid(board)
+    for tries in range(9):
+        player = players[tries % 2]
         while 1:
             try:
-                r, c = map(int, input(f"P {pl}, row col (0-2): ").split())
-                if b[r][c] == " ":
-                    b[r][c] = pl
+                row, col = map(int, input(f"P {player}, row col (0-2): ").split())
+                if board[row][col] == " ":
+                    board[row][col] = player
                     break
                 else:
                     print("Nope. Again.")
             except:
                 print("Wrong. 0-2 pls.")
-        print_grid(b)
-        if c_w(b, pl):
-            print(f"P {pl} wins!")
+        print_grid(board)
+        if check_winner(board, player):
+            print(f"P {player} wins!")
             return
-        if f(b):
+        if tie(board):
             print("Draw!")
             return
     print("Draw!")
 
 
-t()
+tictactoe()

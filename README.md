@@ -62,7 +62,7 @@ t()
 
 #### **🔍 Task List (Each Task Uses a Key PyCharm Feature)**
 
-❌ **Rename stuff and make it better** → Use **Refactor > Rename** (Shift + F6)<br>
+✅ **Rename stuff and make it better** → Use **Refactor > Rename** (Shift + F6)<br>
 ✅ **Reformat the code using auto-formatting** → Use **Code > Reformat Code** (Ctrl + Alt + L)<br>
 ❌ **Run Code Analysis & Fix Warnings** → Use **Inspect Code** (Code > Inspect Code)<br>
 ❌ **Extract some code from t() and make it cleaner**→ Use **Refactor > Extract Method**(Ctrl + Alt + M)<br>
