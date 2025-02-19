@@ -7,9 +7,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="29f6eda7-1b7c-4315-98c9-9529e208442f" name="Changes" comment="Step 4:&#10;   * FIX: Extracted the code to get the input from the user and placed into its own function.&#10;Step 4 Complete">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-    </list>
+    <list default="true" id="29f6eda7-1b7c-4315-98c9-9529e208442f" name="Changes" comment="Step 5:&#10;   * FIX: Used debugging tools&#10;Step 5 Complete&#10;&#10;Step 6:&#10;   * FIX: Added docstrings to each of the functions&#10;Step 6 Complete" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -51,7 +49,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Python.main.executor": "Run",
+    "Python.main.executor": "Coverage",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
@@ -80,7 +78,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1739739594569</updated>
-      <workItem from="1739739595606" duration="5594000" />
+      <workItem from="1739739595606" duration="6487000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Project Creation&#10;&#10;* Created main.py and pasted in template code&#10;&#10;* Created README.md and added assignment details">
       <option name="closed" value="true" />
@@ -138,7 +136,15 @@
       <option name="project" value="LOCAL" />
       <updated>1739997932684</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Step 5:&#10;   * FIX: Used debugging tools&#10;Step 5 Complete&#10;&#10;Step 6:&#10;   * FIX: Added docstrings to each of the functions&#10;Step 6 Complete">
+      <option name="closed" value="true" />
+      <created>1739998855721</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1739998855721</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -151,9 +157,10 @@
     <MESSAGE value="Step 1:&#10; Renamed Functions:&#10;   c_w() -&gt; check_winner()&#10;   f() -&gt; tie()&#10;   t() -&gt; tictactoe()&#10; Renamed Variables:&#10;   r -&gt; row&#10;   c -&gt; col&#10;   b -&gt; board&#10;   p -&gt; players&#10;   pl -&gt; player&#10;   t -&gt; tries&#10;Step 1 Complete" />
     <MESSAGE value="Step 3:&#10;   - 1 weak warning: Too broad exception clause.&#10;   * FIX: switched from generic exception to ValueError exception. This captures the errors that result from improper input.&#10;Step 3 Complete" />
     <MESSAGE value="Step 4:&#10;   * FIX: Extracted the code to get the input from the user and placed into its own function.&#10;Step 4 Complete" />
-    <option name="LAST_COMMIT_MESSAGE" value="Step 4:&#10;   * FIX: Extracted the code to get the input from the user and placed into its own function.&#10;Step 4 Complete" />
+    <MESSAGE value="Step 5:&#10;   * FIX: Used debugging tools&#10;Step 5 Complete&#10;&#10;Step 6:&#10;   * FIX: Added docstrings to each of the functions&#10;Step 6 Complete" />
+    <option name="LAST_COMMIT_MESSAGE" value="Step 5:&#10;   * FIX: Used debugging tools&#10;Step 5 Complete&#10;&#10;Step 6:&#10;   * FIX: Added docstrings to each of the functions&#10;Step 6 Complete" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Assignment_4___PyCharm_Power_User_Challenege$main.coverage" NAME="main Coverage Results" MODIFIED="1739997786538" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Assignment_4___PyCharm_Power_User_Challenege$main.coverage" NAME="main Coverage Results" MODIFIED="1739998948425" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
