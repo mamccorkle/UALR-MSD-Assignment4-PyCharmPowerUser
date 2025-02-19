@@ -32,8 +32,8 @@ def tictactoe():
                     break
                 else:
                     print("Nope. Again.")
-            except:
-                print("Wrong. 0-2 pls.")
+            except ValueError as ve:
+                print("Wrong. 0-2 pls.\n" + str(ve))
         print_grid(board)
         if check_winner(board, player):
             print(f"P {player} wins!")
