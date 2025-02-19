@@ -26,7 +26,7 @@ def tictactoe():
         player = players[tries % 2]
         while 1:
             try:
-                row, col = map(int, input(f"P {player}, row col (0-2): ").split())
+                col, row = get_input(player)
                 if board[row][col] == " ":
                     board[row][col] = player
                     break
@@ -42,6 +42,11 @@ def tictactoe():
             print("Draw!")
             return
     print("Draw!")
+
+
+def get_input(player):
+    row, col = map(int, input(f"P {player}, row col (0-2): ").split())
+    return col, row
 
 
 tictactoe()
