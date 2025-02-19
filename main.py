@@ -5,10 +5,14 @@ def print_grid(board):
 
     :param board: 2D Array of the board layout
     """
+    print("")
+    number_rows = len(board)
     for row in board:
         print(" | ".join(row))
-        print("-" * 5)
-
+        if number_rows > 1:
+            print("-" * 9)
+        number_rows = number_rows - 1
+    print("")
 
 def check_winner(board, players):
     """
